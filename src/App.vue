@@ -34,27 +34,31 @@ export default {
     FooterSection
   },
   mounted () {
-    // $('body').scrollspy({ target: '#main-nav' });
+    
+    // Add smooth scrolling
+    $('#main-nav a').on('click', function (e) {
+        // Check for a hash value
+        if (this.hash !== '') {
 
-    // // Add smooth scrolling
-    // $('#main-nav a').on('click', function (e) {
-    //     // Check for a hash value
-    //     if (this.hash !== '') {
-    //     // Prevent default behavior
-    //     e.preventDefault();
+          // Prevent default behavior
+          e.preventDefault();
 
-    //     // Store hash
-    //     const hash = this.hash;
+          // Store hash
+          let hash = this.hash;
 
-    //     // Animate smooth scroll
-    //     $('html, body').animate({
-    //         scrollTop: $(hash).offset().top
-    //     }, 900, function () {
-    //         // Add hash to URL after scroll
-    //         window.location.hash = hash;
-    //     });
-    //     }
-    // });
+          //added gap of 100
+          let topScroll = $(hash).offset().top - 100;
+
+          // Animate smooth scroll
+          $('html, body').animate({
+              scrollTop: topScroll
+          }, 900, function () {
+              // Add hash to URL after scroll
+              window.location.hash = hash + "-section";
+          });
+
+        }
+    });
   }
 }
 </script>

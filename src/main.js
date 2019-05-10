@@ -7,6 +7,8 @@ import { faArrowRight, faArrowCircleDown, faUser, faEnvelope, faPencilAlt} from 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTwitter, faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
+window.$ = window.jQuery = require('jquery');
+
 library.add(faArrowRight, faArrowCircleDown, faFacebookSquare, faTwitter, faInstagram, faUser, faEnvelope, faPencilAlt);
 
 Vue.use(BootstrapVue);

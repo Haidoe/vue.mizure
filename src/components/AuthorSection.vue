@@ -1,14 +1,14 @@
 <template>
     <section id="authors" class="py-5 text-center">
         <b-container>
-            <header class="pb-4 my-5">
+            <header class="pb-4 mb-5">
                 <h1 class="text-primary"> Meet the Authors </h1>
                 <p class="text-muted lead py-3">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit at eos dolore debitis ab tempore labore porro provident odio commodi.
                 </p>
             </header>
 
-            <b-row>
+            <b-row class="pt-4">
                 <b-col md="6" lg="3" v-for="(author, index) in authors" v-bind:key="index">
                     <b-card>
                         <b-card-body>

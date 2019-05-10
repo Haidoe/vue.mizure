@@ -2,14 +2,14 @@
     <section class="py-5" id="about">
 
         <b-container class="text-center">
-            <header class="pb-4 my-5">
+            <header class="pb-4 mb-5">
                 <h1 class="text-primary"> Why this Book ? </h1>
                 <p class="text-muted lead py-3">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis error animi libero est at molestiae.
                 </p>
             </header>
 
-            <div role="tablist">
+            <div role="tablist" class="pt-2">
                 
                 <b-card no-body v-for="(title, index) in titles" v-bind:key="index">
                     <b-card-header class="p-1 text-white bg-primary" role="tab">
