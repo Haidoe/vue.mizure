@@ -1,7 +1,7 @@
 <template>
     <b-navbar toggleable="lg" fixed="top" type="light" class="py-4">
         <b-container>
-            <b-navbar-brand href="#">
+            <b-navbar-brand href="#home">
                 <img src="../assets/img/haidoe-logo.svg" alt="logo-main" width="200px">
             </b-navbar-brand>
 
